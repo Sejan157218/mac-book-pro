@@ -17,6 +17,7 @@
     <main>
         <section>
             <div class="row">
+                <!-- Details -->
                 <div class="col-sm-12 col-md-6 g-5">
                     <img class="img-fluid" src="img/mac.png" alt="">
                 </div>
@@ -25,23 +26,27 @@
                         <h1>Customize your Blue 24-inch iMac with Apple M1 clip.</h1>
                         <p>Apple m1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,7-core GPU,and 16-Core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magiv keyboard-US English</p>
                     </div>
-                    <div>
+                    <!-- Memory -->
+                    <div class="my-4">
                         <h3>Memory</h3>
-                        <button id="memory-8">8GB Unified memory</button>
-                        <button id="memory-16">16GB Unified memory</button>
+                        <button id="memory-8" class="button px-2">8GB Unified memory</button>
+                        <button id="memory-16" class="button px-2">16GB Unified memory</button>
                     </div>
-                    <div>
+                    <!-- Storage -->
+                    <div class="mb-4">
                         <h3>Storage</h3>
-                        <button id="storage-256">256GB SSD storage</button>
-                        <button id="storage-512">512GB SSD storage</button>
-                        <button id="storage-1tb">1TB SSD storage</button>
+                        <button id="storage-256" class="button px-2">256GB SSD storage</button>
+                        <button id="storage-512" class="button px-2">512GB SSD storage</button>
+                        <button id="storage-1tb" class="button px-2">1TB SSD storage</button>
                     </div>
-                    <div>
+                    <!-- delivery option -->
+                    <div class="mb-5">
                         <h3>Choose delivery option</h3>
-                        <button id="free-delivery">Friday,Aug 25 FREE prime Delivery</button>
-                        <button id="expensive-delivery">Friday,Aug 21 Delivery charge $20</button> 
+                        <button id="free-delivery" class="button px-2">Friday,Aug 25 FREE prime Delivery</button>
+                        <button id="expensive-delivery" class="button px-2">Friday,Aug 21 Delivery charge $20</button> 
                     </div>
-                    <div class="row">
+                    <!-- update Price -->
+                    <div class="row mt-3">
                         <div class="col-sm-6">
                             <table class="table">
                                 <tbody>
@@ -69,16 +74,21 @@
                               </table>
                               <div>
                                   <h4>Add Pomo Code</h4>
-                                  <input id="pomo-code" type="text" placeholder="Inpur code">
-                                  <button id="apply-button">Apply</button>
+                                  <input id="pomo-code" class="input" type="text" placeholder="Inpur code">
+                                  <button id="apply-button" class="button px-4">Apply</button>
                               </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Notification -->
+            <div class="notify-section">
+                <p id="notify-msg" class="notify">❌ Pomo Code Didn't Match, Please try again</p> 
+            </div>
             <hr>
+            <!-- Total Amount -->
             <div>
-                <h1class="text-center">Total: $<span id="total">1299</span></h1>
+                <h1 class="text-center">Total: $<span id="total">1299</span></h1>
             </div>
         </section>
 
