@@ -20,8 +20,8 @@ const notify = document.getElementById('notify-msg');
 
 // Update price function
 function priceUpdate(product,price){
-    const proudPrice = document.getElementById(product +'-price');
-    proudPrice.innerText = Number(price);
+    const productPrice = document.getElementById(product +'-price');
+    productPrice.innerText = Number(price);
     totalPrice();
 }
 
