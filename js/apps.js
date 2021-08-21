@@ -11,8 +11,8 @@ const buttonFor1TB =document.getElementById('storage-1tb');
 const freeDelivery = document.getElementById('free-delivery');
 const expensiveDelivery = document.getElementById('expensive-delivery');
 
-// pomo code
-const promoCode = document.getElementById('pomo-code');
+// promo code
+const promoValue = document.getElementById('promo-code');
 const apllyButton = document.getElementById('apply-button');
 // Notify msg
 const notify = document.getElementById('notify-msg');
@@ -42,11 +42,11 @@ function totalPrice(){
     totalprice.innerText = total;
 }
 // promo code function
-function pomoCode(){
-    const pomoCodeInput = promoCode;
-    const pomoCodeInputValue = pomoCodeInput.value;
+function promoCode(){
+    const promoCodeInput = promoValue;
+    const promoCodeInputValue = promoCodeInput.value;
     const matchCode = 'stevekaku';
-    if(pomoCodeInputValue == matchCode){
+    if(promoCodeInputValue == matchCode){
           const previousTotalPrice = document.getElementById('total');
           const previousTotalPriceValue = Number(previousTotalPrice.innerText)
           const discountAmount  = previousTotalPriceValue * 0.2;
@@ -54,12 +54,13 @@ function pomoCode(){
           previousTotalPrice.innerText = newTotalPrice;
           notify.style.display = 'none';
           apllyButton.disabled = true;
-
     }
     else{
         notify.style.display = 'block';
+
+
     }
-    pomoCodeInput.value = '';
+    promoCodeInput.value = '';
 }
 // For selected function
 function isContain(elem){
@@ -126,18 +127,18 @@ expensiveDelivery.addEventListener('click',function(){
 })
 
 
-// For pomo code
+// For promo code
 
-promoCode.addEventListener('click',function(){
+promoValue.addEventListener('click',function(){
     if(isContain != true){
-        promoCode.classList.add('selected');
+        promoValue.classList.add('selected');
         apllyButton.classList.remove('selected');
     }
 })
 apllyButton.addEventListener('click',function(){
     if(isContain != true){
-        promoCode.classList.remove('selected');
+        promoValue.classList.remove('selected');
         apllyButton.classList.add('selected');
     }
-    pomoCode();
+    promoCode();
 })
