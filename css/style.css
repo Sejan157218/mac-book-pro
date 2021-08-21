@@ -19,6 +19,8 @@ button:hover{
     border-radius: 10px;
     background-color: #e2f4de;
     border: 1px solid #50976a;
+    color: #50976a;
+    font-weight: 600;
 }
 
 /*For table */
